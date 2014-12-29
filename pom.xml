@@ -18,16 +18,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
-    <name>IntelliJ Annotations Instrumenter</name>
-
     <groupId>com.torstling.intellij</groupId>
     <artifactId>notnull-instrumenter-maven-plugin</artifactId>
     <version>1.0</version>
     <packaging>maven-plugin</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
     <description>IntelliJ IDEA annotations instrumenter maven plugin</description>
-
     <url>http://www.jetbrains.com/idea/</url>
 
     <prerequisites>
@@ -51,8 +48,19 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Vlad Rassokhin</name>
+        </developer>
+        <developer>
+            <name>Alexander Torstling</name>
+        </developer>
+    </developers>
+
     <scm>
-        <url>http://github.com/atorstling/notnull-instrumenter-maven-plugin</url>
+        <connection>scm:git:git@github.com:atorstling/notnull-instrumenter-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:atorstling/notnull-instrumenter-maven-plugin.git</developerConnection>
+        <url>git@github.com:atorstling/notnull-instrumenter-maven-plugin.git</url>
     </scm>
 
     <dependencies>
@@ -97,6 +105,46 @@
                         <id>mojo-descriptor</id>
                         <goals>
                             <goal>descriptor</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
                         </goals>
                     </execution>
                 </executions>
