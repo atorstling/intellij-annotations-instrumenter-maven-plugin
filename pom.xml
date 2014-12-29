@@ -21,9 +21,9 @@
 
     <name>IntelliJ Annotations Instrumenter</name>
 
-    <groupId>com.intellij</groupId>
+    <groupId>com.torstling.intellij</groupId>
     <artifactId>notnull-instrumenter-maven-plugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>maven-plugin</packaging>
 
     <description>IntelliJ IDEA annotations instrumenter maven plugin</description>
@@ -38,8 +38,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-core.version>3.0.5</maven-core.version>
         <maven-plugin-annotations.version>3.2</maven-plugin-annotations.version>
-        <intellij-annotations.version>117.157</intellij-annotations.version>
-        <asm.version>4.1</asm.version>
+        <intellij-annotations.version>13.0</intellij-annotations.version>
+        <asm.version>5.0.3</asm.version>
     </properties>
 
     <licenses>
@@ -52,29 +52,8 @@
     </licenses>
 
     <scm>
-        <url>http://github.com/JetBrains/intellij-community/tree/master/platform/annotations</url>
+        <url>http://github.com/atorstling/notnull-instrumenter-maven-plugin</url>
     </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>idea-community-builds</id>
-            <name>IntelliJ IDEA Community Edition Builds</name>
-            <url>http://repository.jetbrains.com/idea-community-builds/</url>
-        </repository>
-    </distributionManagement>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>repository.jetbrains.com</id>
-            <url>http://repository.jetbrains.com/idea-community-builds</url>
-        </pluginRepository>
-    </pluginRepositories>
-    <repositories>
-        <repository>
-            <id>repository.jetbrains.com</id>
-            <url>http://repository.jetbrains.com/idea-community-builds</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
@@ -93,7 +72,7 @@
             <version>${maven-plugin-annotations.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.jetbrains.intellij</groupId>
+            <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>${intellij-annotations.version}</version>
         </dependency>
