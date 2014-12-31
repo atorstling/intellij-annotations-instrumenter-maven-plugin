@@ -70,7 +70,7 @@
 
     <scm>
         <url>https://github.com/atorstling/intellij-annotations-instrumenter-maven-plugin</url>
-        <connection>scm:git:git@github.com/atorstling/intellij-annotations-instrumenter-maven-plugin.git</connection>
+        <connection>scm:git:git@github.com:atorstling/intellij-annotations-instrumenter-maven-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:atorstling/intellij-annotations-instrumenter-maven-plugin.git</developerConnection>
     </scm>
 
