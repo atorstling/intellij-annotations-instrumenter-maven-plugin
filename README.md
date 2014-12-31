@@ -12,7 +12,7 @@ Just update your pom.xml with following:
             <plugin>
                 <groupId>com.torstling.intellij</groupId>
                 <artifactId>notnull-instrumenter-maven-plugin</artifactId>
-                <version>1.0</version>
+                <version>0.1.0</version>
                 <executions>
                     <execution>
                         <goals>
