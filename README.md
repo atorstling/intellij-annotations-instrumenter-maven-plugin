@@ -3,6 +3,11 @@ intellij-annotations-instrumenter-maven-plugin
 
 IntelliJ IDEA annotations instrumenter maven plugin
 
+News
+==============================================
+0.1.0: ASM 5 support (JDK 8)
+
+
 Usage
 ==============================================
 This build of the instrumenter is available in the central repo. Just update your pom.xml with following:
