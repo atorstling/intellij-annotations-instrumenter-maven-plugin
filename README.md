@@ -5,7 +5,7 @@ IntelliJ IDEA annotations instrumenter maven plugin
 
 Usage
 ==============================================
-Just update your pom.xml with following: 
+This build of the instrumenter is available in the central repo. Just update your pom.xml with following:
 ```xml
     <build>
         <plugins>
