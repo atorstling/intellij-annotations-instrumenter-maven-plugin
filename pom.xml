@@ -14,7 +14,8 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.torstling.intellij</groupId>
@@ -52,7 +53,16 @@
             <name>Vlad Rassokhin</name>
         </developer>
         <developer>
+            <name>Eugene Zhuravlev</name>
+        </developer>
+        <developer>
             <name>Alexander Torstling</name>
+        </developer>
+        <developer>
+            <name>ven</name>
+        </developer>
+        <developer>
+            <name>Olle Sundblad</name>
         </developer>
     </developers>
 
@@ -70,9 +80,10 @@
     <scm>
         <url>https://github.com/atorstling/intellij-annotations-instrumenter-maven-plugin</url>
         <connection>scm:git:git@github.com:atorstling/intellij-annotations-instrumenter-maven-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:atorstling/intellij-annotations-instrumenter-maven-plugin.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
+        <developerConnection>scm:git:git@github.com:atorstling/intellij-annotations-instrumenter-maven-plugin.git
+        </developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <dependencies>
         <dependency>
