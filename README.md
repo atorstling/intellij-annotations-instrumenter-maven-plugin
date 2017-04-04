@@ -1,3 +1,5 @@
+# NOTE: This plugin is no longer actively maintained, development is done at https://github.com/osundblad/intellij-annotations-instrumenter-maven-plugin . Please use that version instead.
+
 intellij-annotations-instrumenter-maven-plugin
 ==============================================
 
